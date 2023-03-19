@@ -1,0 +1,25 @@
+###
+GET http://localhost:3001/api/users HTTP/1.1
+
+###
+POST http://localhost:3001/api/users/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Juan",
+    "lastName": "Lopez",
+    "email": "lopez@hotmail.com"
+}
+
+###
+DELETE http://localhost:3001/api/users/6 HTTP/1.1
+
+###
+PUT http://localhost:3001/api/users/7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Juan Mod desde",
+    "lastName": "Lopez Rest Client",
+    "email": "lopez@hotmail.com"
+}
